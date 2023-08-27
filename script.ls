@@ -23,10 +23,11 @@ function getKeyCombo event
   combo = getKeyCombo event
   switch combo
   | \F11
-    setTimeout !~>
-      unless document.fullscreen
-        document.body.requestFullscreen!
-    , 100
+    if /^.+?\.io$/.test location.hostname
+      setTimeout !~>
+        unless document.fullscreen
+          document.documentElement.requestFullscreen!
+      , 100
 
 const domainName = getDomainName!
 document.documentElement.classList.add domainName.toUpperCase!

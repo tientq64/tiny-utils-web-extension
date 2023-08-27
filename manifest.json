@@ -28,7 +28,9 @@
         "https://*.wormate.io/*",
         "https://*.hexanaut.io/*",
         "https://*.diep.io/*",
-        "https://*.wanderers.io/*"
+        "https://*.wanderers.io/*",
+        "https://*.yorg3.io/*",
+        "https://*.starblast.io/*"
       ],
       "all_frames": false
     }
