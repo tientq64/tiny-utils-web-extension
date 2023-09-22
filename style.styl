@@ -1,3 +1,53 @@
 .TETR
   canvas#pixi
     image-rendering: pixelated
+
+.STARVE
+  *, :before, :after
+    font-family: "Clear-Sans", sans-serif !important
+
+  body
+    line-height: 2
+
+  .grecaptcha-badge
+    display: none !important
+
+  #ad_content_market
+  .inventory_line_vertical
+    display: none
+
+  #inventory_trait_size
+    width: unset
+    margin-left: unset
+    margin-top: 20px
+
+  #shop_market:before
+    left: 63%
+
+  #quit_chronoquest
+  #quit_market
+    margin: 20px auto
+    float: unset
+
+  #quit3
+    margin-top: 9px
+
+  #home_craft
+  #recipe_craft
+  #shop_market
+  #sure_delete
+    background: #3a2a0dcc
+
+  #guide
+    position: fixed
+    height: 100%
+    padding: 8px 16px
+    border-radius: 12px
+    box-sizing: border-box
+    line-height: 1.24
+    white-space: pre-line
+    background: #fff6
+    color: #000
+    text-shadow: 0 0 #666
+    pointer-events: none
+    user-select: none

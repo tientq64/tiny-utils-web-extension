@@ -15,7 +15,7 @@
   "content_scripts": [
     {
       "js": [
-        "script.js"
+        "prescript.js"
       ],
       "css": [
         "style.css"
@@ -30,9 +30,17 @@
         "https://*.diep.io/*",
         "https://*.wanderers.io/*",
         "https://*.yorg3.io/*",
-        "https://*.starblast.io/*"
+        "https://*.starblast.io/*",
+        "https://*.truyennung.com/*"
       ],
       "all_frames": false
+    }
+  ],
+
+  "web_accessible_resources": [
+    {
+      "resources": ["script.js"],
+      "matches": ["<all_urls>"]
     }
   ]
 }

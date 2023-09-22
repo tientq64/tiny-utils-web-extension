@@ -7,6 +7,11 @@ require! {
 
 fs.emptyDirSync \dist
 
+code = fs.readFileSync \prescript.ls \utf8
+code = livescript.compile code
+{code} = await terser.minify code
+fs.writeFileSync \dist/prescript.js code
+
 code = fs.readFileSync \script.ls \utf8
 code = livescript.compile code
 {code} = await terser.minify code
